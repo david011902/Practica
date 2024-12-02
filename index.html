@@ -1,0 +1,93 @@
+<!DOCTYPE html> <!--Indica el tipo de documento-->
+<html lang="en"><!--Indica el lenguaje-->
+<head><!--Podemos agregar caracteristicas de nuestra pagina web-->
+    <title>PaginaWeb</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body><!--Se incluye todo el contenido de nuestra web-->
+    <h1>Titulo Principal</h1><!--Son utilizados por los motores de busqueda-->
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga labore omnis quo totam, suscipit quasi alias ut beatae debitis incidunt soluta libero adipisci unde, molestiae tempora dolorum eligendi? Ipsa!</p>
+    <p>Como agregar otro parrafo en una nueva linea</p>
+    <hr> <!--Separa el texto con una linea -->
+    <h2>Otro subtitulo</h2>
+    <p>Lorem ipsum dolor <span style="color: aqua;"> amet consectetur adipisicing elit.</span> Doloribus, excepturi non veniam saepe nesciunt temporibus dolorem.<br> <!--Este  da un salto de linea con el br-->Eius corporis molestiae ullam, omnis accusantium fugiat dolor, esse nesciunt, impedit nisi accusamus ut.</p>
+    <!--Este texto es un comentario-->
+    <a target=" _blank" href="https://www.google.com">Ir a google</a><!--Etiqueta de hipervinculo necesita el href para agregar el link, target=" _blank" permite abrir en una nueva ventana-->
+    <img  src="img\3.1 Mapa Mental Mi primer Sistema Experto (1).png" width="40%"/><!--Etiqueta para imagenes con el '/' le indicamos que no necesitamos otro para cerrar-->
+
+    <!--TABLAS-->
+    <table style="width: 500px;">
+        <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hola beats</td><!--Definir elementos estandares-->
+            <td>Gratis</td>
+        </tr>
+        <tr>
+            <td>Otro producto</td>
+            <td>Precio del nuevo</td>
+        </tr>
+        <tr>
+            <td>Nuevo producto</td>
+            <td>20,000</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!--LISTAS-->
+    <!--ul es lista no ordenada '.'.-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--ol es lista ordenada '1,2,3,4...'-->
+    <ol>
+        <li value="50">Elemento 1</li><!--Podemos indicar el valor que deseamos en el que comience-->
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type:lower-alpha ;">Sub elemento 1</li>
+                <li style="list-style-type:lower-alpha ;">Sub elemento 2</li>
+                <li style="list-style-type:lower-alpha ;">Sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <!--FORMULARIOS-->
+    <form action="/formulario" method="post"><!--Action indica a donde se va a ir los datos del formulario.
+        GET*(214 caracteres el link) y POST-->
+        <label for="Nombre">Nombre</label><!--EL for nos permite que con un id en el input al presionar el texto empiece a capturar datos del recuadro input-->
+        <input  value="valor por defecto" type="text" id="Nombre" name="nombre" placeholder="Nombre"/><!--name es el indicador de la llave, placeholder es el texto gris del recuadro-->
+        <br><!--Etiqueta salto-->
+        <label for="Apellido">Apellido</label>
+        <input type="text" id="Apellido" name="Apellido" placeholder="Apellido"/>
+        <br>
+        <label for="Comentario">Comentario</label>
+        <textarea rows="10" cols="50" id="Comentario" name="Comentario" placeholder="Ingrese su comanterio"></textarea>
+        <br>
+        <input type="submit" />
+        <button type="button">Enviar con button</button><!--Con button hay que especificar su type-->
+        <button type="reset">Enviar con reset</button>
+        <button type="submit">Enviar con submit</button>
+    </form>
+</body>
+</html>
